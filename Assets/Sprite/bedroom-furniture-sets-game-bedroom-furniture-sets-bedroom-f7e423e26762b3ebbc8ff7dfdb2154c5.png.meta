@@ -160,7 +160,7 @@ TextureImporter:
         width: 54
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,6 +168,27 @@ TextureImporter:
       bones: []
       spriteID: 555214be74b5ed049b2e2d5a7dfb7ebe
       internalID: 1556012716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 177
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305fc84745831c84cb59ed3b3917240b
+      internalID: -2078246788
       vertices: []
       indices: 
       edges: []
@@ -186,6 +207,7 @@ TextureImporter:
       Table: -1427319539
       bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_0: 468153846
       bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_1: 1556012716
+      bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_2: -2078246788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

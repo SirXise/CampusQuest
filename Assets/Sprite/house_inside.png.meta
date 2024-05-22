@@ -139,7 +139,7 @@ TextureImporter:
         width: 28
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,6 +147,69 @@ TextureImporter:
       bones: []
       spriteID: 71701136008ff8f47b313ba060446247
       internalID: 1441864638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house_inside_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 262
+        width: 32
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cdfc3bcad77d04bbd3c4fb0560fd9a
+      internalID: -1747231014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house_inside_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 262
+        width: 32
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89a574361ad3b24db2f47ef79e8ae57
+      internalID: -1681160799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house_inside_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 262
+        width: 32
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156ee0b022d1ae24fa7f5612095a1acf
+      internalID: 509537148
       vertices: []
       indices: 
       edges: []
@@ -164,6 +227,9 @@ TextureImporter:
     nameFileIdTable:
       house_inside_0: 2078745945
       house_inside_1: 1441864638
+      house_inside_2: -1747231014
+      house_inside_3: -1681160799
+      house_inside_4: 509537148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
