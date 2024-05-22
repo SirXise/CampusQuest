@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183936180}
   - component: {fileID: 183936179}
+  - component: {fileID: 183936181}
   m_Layer: 0
   m_Name: house_inside_1
   m_TagString: Untagged
@@ -291,6 +292,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &183936181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183936178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41b7d2cc6965b84ea99f459327815a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460349063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1224,7 @@ GameObject:
   - component: {fileID: 1434127987}
   - component: {fileID: 1434127989}
   - component: {fileID: 1434127988}
+  - component: {fileID: 1434127990}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -1952,6 +1966,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1434127990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434127986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41b7d2cc6965b84ea99f459327815a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672401112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,11 +2076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3419751859927365439, guid: 710566ef1d051cb409bbd9946ed00547, type: 3}
       propertyPath: targetPosition.x
-      value: 1.05
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: 3419751859927365439, guid: 710566ef1d051cb409bbd9946ed00547, type: 3}
       propertyPath: targetPosition.y
-      value: 4.14
+      value: 4.25
       objectReference: {fileID: 0}
     - target: {fileID: 3419751859927365439, guid: 710566ef1d051cb409bbd9946ed00547, type: 3}
       propertyPath: sceneNameToTransition
