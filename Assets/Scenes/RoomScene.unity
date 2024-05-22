@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 573615184}
   - component: {fileID: 573615183}
   - component: {fileID: 573615186}
+  - component: {fileID: 573615187}
   m_Layer: 0
   m_Name: NPC_test_0
   m_TagString: Untagged
@@ -518,6 +519,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.875, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &573615187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573615182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10259fa8a82d35447a35a12fc4b08c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z_Filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1 &673751277
 GameObject:
   m_ObjectHideFlags: 0
