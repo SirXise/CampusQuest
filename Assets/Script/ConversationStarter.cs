@@ -30,6 +30,7 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            ConversationManager.Instance.EndConversation();
         }
     }
 }
