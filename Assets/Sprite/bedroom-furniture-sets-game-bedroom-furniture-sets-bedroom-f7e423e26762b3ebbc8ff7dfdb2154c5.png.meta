@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -244,7 +257,7 @@ TextureImporter:
         width: 32
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,6 +265,27 @@ TextureImporter:
       bones: []
       spriteID: 24e611ca9c9ccb94abf7ab86402e699f
       internalID: 1375241325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 273
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1851be8c6dca34b91b0e51f0421818
+      internalID: -1486432556
       vertices: []
       indices: 
       edges: []
@@ -274,6 +308,7 @@ TextureImporter:
       bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_3: 1985797092
       bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_4: -132707036
       bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_5: 1375241325
+      bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-f7e423e26762b3ebbc8ff7dfdb2154c5_6: -1486432556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
