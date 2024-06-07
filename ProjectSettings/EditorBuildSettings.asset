@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 349363b3c5d8b3e45b8a691323fd2491
-  - enabled: 1
     path: Assets/Scenes/RoomScene.unity
     guid: 71b07251344cda246af34cee68972f01
   - enabled: 1
@@ -17,4 +14,43 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CafeteriaScene.unity
     guid: 381f598792902ed48b4d3226724d1ad0
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene1.unity
+    guid: 2f49dcb23d3da004ba8e0f001a4e9642
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene2.unity
+    guid: 1d6354e0ca3d90c429cbbf0eaef092d3
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene3.unity
+    guid: 5f714200189f11b42af4afb6ebf4eb56
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene4.unity
+    guid: f582dbc631ddda14f8e8100cef04d6ec
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene5.unity
+    guid: 5d2f562ecd308ab4e8bc98d19d280dbd
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene6.unity
+    guid: 31ce0c5a090a9e84fbd08b9666424a30
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene7.unity
+    guid: 4249d580fdb03224591abdcd2e111277
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene8.unity
+    guid: 2a678a328877e704383d86f0e108c7a6
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene9.unity
+    guid: 4d1dc9a059cc4b94297755030640ed5d
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene10.unity
+    guid: 1e85b5cc6ad5ec84a89daf1e419b093c
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene11.unity
+    guid: 78aafb68c7dc16a47890eb8bd78e83c0
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene12.unity
+    guid: 710b05adb4006234a8ef9107534dd8ee
+  - enabled: 1
+    path: Assets/Scenes/syifaa/scene13.unity
+    guid: 239dfea4efcf0ff4781f5aa8aa6ef35a
   m_configObjects: {}
