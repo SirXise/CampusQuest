@@ -1,14 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 8.0f;
+    public VectorValue startingPosition;
+    public int keys = 0;
+    public TextMeshProUGUI keyAmount;
+    public TextMeshProUGUI youWon;
+
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
-    public VectorValue startingPosition;
+    private Vector2 lastMotionVector;
+
+    public bool moving;
 
     private void Start()
     {
@@ -24,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         change.y = Input.GetAxisRaw("Vertical");
         UpdateAnimationAndMove();
     }
+
     void UpdateAnimationAndMove()
     {
         if (change != Vector3.zero)
@@ -32,20 +41,38 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
-            Debug.Log(speed);
+            lastMotionVector = new Vector2(change.x, change.y).normalized;
+            animator.SetFloat("lastHorizontal", change.x);
+            animator.SetFloat("lastVertical", change.y);
         }
         else
-        {            
+        {
             animator.SetBool("moving", false);
-            Debug.Log("Stop");
         }
     }
 
     void MoveCharacter()
     {
-        myRigidbody.MovePosition(
-            transform.position + change * speed * Time.deltaTime
-            );
+        myRigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Keys"))
+        {
+            keys++;
+            keyAmount.text = "Collected Stationeries: " + keys;
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Enemies"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (collision.gameObject.CompareTag("Exit") && keys == 4)
+        {
+            youWon.text = "YOU WON!";
+        }
+    }
 }

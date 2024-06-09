@@ -4,49 +4,31 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-
     public Transform target;
-    public float smoothing;
-    public Vector2 maxPosition;
-    public Vector2 minPosition;
 
-    // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(target.position.x,target.position.y,transform.position.z);
+        if (target != null)
+        {
+            transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+            Debug.Log("Camera initialized at position: " + transform.position);
+        }
+        else
+        {
+            Debug.LogError("Target not assigned to the CameraMovement script.");
+        }
     }
-
 
     void LateUpdate()
     {
-        if(transform.position != target.position)
+        if (target == null)
         {
-            Vector3 targetPosition = new Vector3
-                (
-                target.position.x,
-                target.position.y,
-                transform.position.z
-                );
-
-            targetPosition.x = Mathf.Clamp
-                (
-                targetPosition.x,
-                minPosition.x,
-                maxPosition.x
-                );
-            targetPosition.y = Mathf.Clamp
-                (
-                targetPosition.y,
-                minPosition.y,
-                maxPosition.y
-                );
-
-            transform.position = Vector3.Lerp
-                (
-                transform.position,
-                targetPosition, 
-                smoothing
-                );
+            Debug.LogError("Target is missing. Cannot move camera.");
+            return;
         }
+
+        // Directly set the camera's position to the target's position
+        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        Debug.Log("Camera moved to position: " + transform.position);
     }
 }
