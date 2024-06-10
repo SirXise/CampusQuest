@@ -11,7 +11,7 @@ public class ConversationStarter : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && playerInRange)
+        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
         {
             ConversationManager.Instance.StartConversation(myConversation);
         }
