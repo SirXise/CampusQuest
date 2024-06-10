@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BlinkingEffect : MonoBehaviour
 {
@@ -8,16 +9,24 @@ public class BlinkingEffect : MonoBehaviour
     private bool isBlinking = false;
     private Coroutine blinkCoroutine;
     private Renderer objectRenderer;
+    private TMP_Text textMeshPro;
 
     void Start()
     {
-        objectRenderer = GetComponent<Renderer>();
-        if (objectRenderer == null)
+        if (TryGetComponent<Renderer>(out objectRenderer))
         {
-            Debug.LogError("Renderer component not found on the GameObject.");
-            return;
+            // Renderer component found
+            StartBlinking();
         }
-        StartBlinking();
+        else if (TryGetComponent<TMP_Text>(out textMeshPro))
+        {
+            // TMP_Text component found
+            StartBlinking();
+        }
+        else
+        {
+            Debug.LogError("Neither Renderer nor TMP_Text component found on the GameObject.");
+        }
     }
 
     public void StartBlinking()
@@ -47,13 +56,27 @@ public class BlinkingEffect : MonoBehaviour
     {
         while (isBlinking)
         {
-            SetVisibility(!objectRenderer.enabled);
+            if (objectRenderer != null)
+            {
+                SetVisibility(!objectRenderer.enabled);
+            }
+            else if (textMeshPro != null)
+            {
+                SetVisibility(!textMeshPro.enabled);
+            }
             yield return new WaitForSeconds(blinkInterval);
         }
     }
 
     private void SetVisibility(bool isVisible)
     {
-        objectRenderer.enabled = isVisible;
+        if (objectRenderer != null)
+        {
+            objectRenderer.enabled = isVisible;
+        }
+        else if (textMeshPro != null)
+        {
+            textMeshPro.enabled = isVisible;
+        }
     }
 }
