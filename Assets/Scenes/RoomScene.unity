@@ -4609,6 +4609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ab8a6136fffdd4c8dac112b49fd5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myConversation: {fileID: 795421613}
   Tutorial: {fileID: 1372982486}
 --- !u!1 &1212948209
 GameObject:
@@ -4892,7 +4893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1309526722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4994,7 +4995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1372982487
 MonoBehaviour:
   m_ObjectHideFlags: 0
