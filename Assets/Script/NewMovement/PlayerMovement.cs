@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue startingPosition;
     public int keys = 0;
     public TextMeshProUGUI keyAmount;
-    public TextMeshProUGUI youWon;
+    public GameObject WinPanel; // Reference to the win panel
 
     private Rigidbody2D myRigidbody;
     private Vector3 change;
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         transform.position = startingPosition.initialValue;
+        WinPanel.SetActive(false); // Ensure the win panel is inactive at the start
     }
 
     private void Update()
@@ -72,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Exit") && keys == 4)
         {
-            youWon.text = "YOU WON!";
+            WinPanel.SetActive(true); // Show the win panel
         }
     }
 }
