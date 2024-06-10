@@ -9,7 +9,7 @@ public class SceneSwitcher : MonoBehaviour
 
     void Update()
     {
-        // Check for scene transition key (Z key in this case)
+        // Check for scene transition key (Space key in this case)
         if (Input.GetKeyDown(KeyCode.Z))
         {
             SceneManager.LoadScene(nextScene);
