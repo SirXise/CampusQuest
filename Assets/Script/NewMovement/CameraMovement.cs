@@ -11,7 +11,6 @@ public class CameraMovement : MonoBehaviour
         if (target != null)
         {
             transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
-            Debug.Log("Camera initialized at position: " + transform.position);
         }
         else
         {
@@ -29,6 +28,5 @@ public class CameraMovement : MonoBehaviour
 
         // Directly set the camera's position to the target's position
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
-        Debug.Log("Camera moved to position: " + transform.position);
     }
 }

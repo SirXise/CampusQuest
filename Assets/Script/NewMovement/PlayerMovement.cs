@@ -23,7 +23,10 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         transform.position = startingPosition.initialValue;
-        WinPanel.SetActive(false); // Ensure the win panel is inactive at the start
+        if (WinPanel != null)
+        {
+            WinPanel.SetActive(false); // Ensure the win panel is inactive at the start }
+        }
     }
 
     private void Update()

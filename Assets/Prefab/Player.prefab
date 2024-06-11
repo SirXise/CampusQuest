@@ -193,5 +193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6c21e6311c2549b156724b5c6f750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 800
   startingPosition: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
+  keys: 0
+  keyAmount: {fileID: 0}
+  WinPanel: {fileID: 0}
+  moving: 0
