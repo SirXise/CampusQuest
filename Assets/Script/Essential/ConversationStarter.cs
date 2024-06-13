@@ -11,7 +11,7 @@ public class ConversationStarter : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && playerInRange)
+        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
         {
             ConversationManager.Instance.StartConversation(myConversation);
         }
@@ -22,6 +22,7 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            Debug.Log("Player in Range");
         }
     }
 
@@ -30,6 +31,7 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            Debug.Log("Player in Range");
             ConversationManager.Instance.EndConversation();
         }
     }

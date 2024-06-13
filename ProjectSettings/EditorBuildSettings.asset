@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9c4b4e519b1639746935aea0b2903fbd
+  - enabled: 1
     path: Assets/Scenes/RoomScene.unity
     guid: 71b07251344cda246af34cee68972f01
   - enabled: 1
@@ -14,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CafeteriaScene.unity
     guid: 381f598792902ed48b4d3226724d1ad0
+  - enabled: 1
+    path: Assets/Scenes/LibraryFrontScene.unity
+    guid: 6fcd8caad56e2024080e0bb39dc93c9c
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 5461668ad1e625c41a83a160c1d7dd55
+  - enabled: 1
+    path: Assets/Scenes/TreeHouseScene.unity
+    guid: 0674151f625400a4eb556cc3fcc6911a
   - enabled: 1
     path: Assets/Scenes/syifaa/scene1.unity
     guid: 2f49dcb23d3da004ba8e0f001a4e9642
@@ -56,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Memory/Memory.unity
     guid: 7cc1173b502b680408229f0a65e1e882
+  - enabled: 1
+    path: Assets/Scenes/MazeScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects: {}
