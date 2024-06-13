@@ -1,20 +1,29 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     public float timeLimit = 60f; // Set the time limit here
-    public Text timerText; // Reference to a UI Text element to display the timer
-    public Text gameOverText; // Reference to a UI Text element to display the game over message
+    public TextMeshProUGUI timerText; // Reference to a TextMeshProUGUI element to display the timer
+    public TextMeshProUGUI gameOverText; // Reference to a TextMeshProUGUI element to display the game over message
+    public TextMeshProUGUI winText;
+    public Button ExitButtonLose;
+    public Button ExitButtonWin;
+    public Button restart;
     private float currentTime;
     private bool isRunning = false;
-
+    
     void Start()
     {
         currentTime = timeLimit;
         StartTimer();
         gameOverText.gameObject.SetActive(false); // Hide the Game Over text at the start
+        winText.gameObject.SetActive(false);
+        ExitButtonLose.gameObject.SetActive(false);
+        ExitButtonWin.gameObject.SetActive(false);
+        restart.gameObject.SetActive(false);
     }
 
     void Update()
@@ -51,6 +60,8 @@ public class Timer : MonoBehaviour
     {
         // Show game over message
         gameOverText.gameObject.SetActive(true);
+        ExitButtonLose.gameObject.SetActive(true);
+        restart.gameObject.SetActive(true);
         Debug.Log("Game Over!");
         // Optionally, you can add more logic to handle the game over state, such as disabling game inputs
     }

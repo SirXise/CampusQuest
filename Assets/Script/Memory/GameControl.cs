@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class GameControl : MonoBehaviour
     MainToken[] visibleFaces = new MainToken[2];
     private Timer timer;
     private int matchesFound = 0;
+    public TextMeshProUGUI winText;
+    public Button ExitButtonWin;
 
     void Start()
     {
@@ -111,6 +115,8 @@ public class GameControl : MonoBehaviour
             timer.StopTimer();
             Debug.Log("You Win!");
             // Show win message or perform any win actions
+            winText.gameObject.SetActive(true);
+            ExitButtonWin.gameObject.SetActive(true);
         }
     }
 
