@@ -929,9 +929,9 @@ GameObject:
   - component: {fileID: 129756439}
   - component: {fileID: 129756441}
   - component: {fileID: 129756444}
-  - component: {fileID: 129756447}
   - component: {fileID: 129756446}
   - component: {fileID: 129756445}
+  - component: {fileID: 129756447}
   m_Layer: 0
   m_Name: Cafe Owner
   m_TagString: Untagged
@@ -1133,12 +1133,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 129756438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b6e4c79fc7a324ab972e37c331d8a5, type: 3}
+  m_Script: {fileID: 11500000, guid: fc245e0d7896bc34cb3b4d0d7cbd329b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionType: 0
-  sceneNameToTransition: 
-  targetPosition: {x: 0, y: 0, z: 0}
+  sceneToLoad: Memory
+  playerPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
+  fadeInPanel: {fileID: 8044942079704946909, guid: 55c19dcc2cb2b964cbe1c8ce4b90157b, type: 3}
+  fadeOutPanel: {fileID: 6486552984314968790, guid: d8d1190723c31d544b4d73558c73cac6, type: 3}
+  fadeWait: 0.62
 --- !u!1 &217328097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,7 +1541,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 3394aaea8d423bb4d997a9723f835970, type: 3}
+  Icon: {fileID: -695431721, guid: 39774d591b185774fbebcc783ce095a2, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &282407658
 Transform:
@@ -1572,7 +1575,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 3394aaea8d423bb4d997a9723f835970, type: 3}
+  Icon: {fileID: -695431721, guid: 39774d591b185774fbebcc783ce095a2, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &282407660
 MonoBehaviour:
@@ -1607,7 +1610,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129756447}
+        m_TargetAssemblyTypeName: MoveByButton, Assembly-CSharp
+        m_MethodName: MoveToGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -5677,11 +5692,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":417.5,"yPos":355},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":137.5,"yPos":352},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[1],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":187,"yPos":74},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":645,"yPos":303},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":365,"yPos":300},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[1],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":414.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
     welcome, young adventurer! You look like someone who enjoys a good challenge.
-    Here to test your memory and earn your first key! test","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Cafe
-    Owner","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":272.666718,"yPos":211.333344},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"The
-    challenge is simple but tricky. You will have to match pairs of cards from a
+    Here to test your memory and earn your first key!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Cafe
+    Owner","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":500.166718,"yPos":159.333344},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    challenge is simple but tricky. You will have to match pairs of token from a
     set. If you can match them all within the time limit, the key is yours. Ready
     to start?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Cafe
     Owner","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -5698,19 +5713,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129756444}
-        m_TargetAssemblyTypeName: QuestMark, Assembly-CSharp
-        m_MethodName: Disable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1479669032
 Transform:
   m_ObjectHideFlags: 0
