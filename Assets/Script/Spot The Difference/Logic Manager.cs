@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,8 @@ public class LogicManager : MonoBehaviour
     private int counter;
     private int ObjectCount;
     public bool isWon = false;
+    public TextMeshProUGUI WinLoseText;
+    public Button ExitButtonWin, ExitButtonLose, RestartButton;
 
     private void Start()
     {
@@ -37,7 +40,8 @@ public class LogicManager : MonoBehaviour
         if (ObjectCount == 0)
         {
             isWon = true;
-            Debug.Log("You won");
+            WinLoseText.text = "You won!";
+            ExitButtonWin.gameObject.SetActive(true);
         }
     }
 
@@ -49,6 +53,8 @@ public class LogicManager : MonoBehaviour
         {
             collider.enabled = false;
         }
-        Debug.Log("Time up");
+        WinLoseText.text = "Game Over!";
+        ExitButtonLose.gameObject.SetActive(true);
+        RestartButton.gameObject.SetActive(true);
     }
 }
