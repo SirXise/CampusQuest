@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Library
-  playerPosition: {x: 100, y: 200}
+  playerPosition: {x: -218, y: 268}
   playerStorage: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
   fadeInPanel: {fileID: 8044942079704946909, guid: 55c19dcc2cb2b964cbe1c8ce4b90157b, type: 3}
   fadeOutPanel: {fileID: 6486552984314968790, guid: d8d1190723c31d544b4d73558c73cac6, type: 3}
@@ -1994,7 +1994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Library
-  playerPosition: {x: 100, y: 200}
+  playerPosition: {x: -218, y: 268}
   playerStorage: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
   fadeInPanel: {fileID: 8044942079704946909, guid: 55c19dcc2cb2b964cbe1c8ce4b90157b, type: 3}
   fadeOutPanel: {fileID: 6486552984314968790, guid: d8d1190723c31d544b4d73558c73cac6, type: 3}
