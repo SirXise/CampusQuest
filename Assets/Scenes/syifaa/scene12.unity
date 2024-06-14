@@ -1116,6 +1116,7 @@ GameObject:
   - component: {fileID: 2136310277}
   - component: {fileID: 2136310276}
   - component: {fileID: 2136310275}
+  - component: {fileID: 2136310278}
   m_Layer: 0
   m_Name: button
   m_TagString: Untagged
@@ -1187,10 +1188,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1593295807}
-        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
-        m_MethodName: GoToNextScene
-        m_Mode: 1
+      - m_Target: {fileID: 2136310278}
+        m_TargetAssemblyTypeName: MoveByButton, Assembly-CSharp
+        m_MethodName: MoveToGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1237,6 +1238,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136310273}
   m_CullTransparentMesh: 1
+--- !u!114 &2136310278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136310273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc245e0d7896bc34cb3b4d0d7cbd329b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Library
+  playerPosition: {x: -218, y: 268}
+  playerStorage: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
+  fadeInPanel: {fileID: 0}
+  fadeOutPanel: {fileID: 6486552984314968790, guid: d8d1190723c31d544b4d73558c73cac6, type: 3}
+  fadeWait: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -7529,6 +7529,14 @@ PrefabInstance:
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
+    - target: {fileID: 372143753509691007, guid: 6a99ad3c7648f0447a892e072032a50e, type: 3}
+      propertyPath: playerPosition.x
+      value: -95
+      objectReference: {fileID: 0}
+    - target: {fileID: 372143753509691007, guid: 6a99ad3c7648f0447a892e072032a50e, type: 3}
+      propertyPath: playerPosition.y
+      value: 240
+      objectReference: {fileID: 0}
     - target: {fileID: 4106497717057688626, guid: 6a99ad3c7648f0447a892e072032a50e, type: 3}
       propertyPath: m_Name
       value: Scene Transition
@@ -20099,7 +20107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: CafeteriaScene
-  playerPosition: {x: 0, y: 0}
+  playerPosition: {x: 150, y: -30}
   playerStorage: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
   fadeInPanel: {fileID: 8044942079704946909, guid: 55c19dcc2cb2b964cbe1c8ce4b90157b, type: 3}
   fadeOutPanel: {fileID: 6486552984314968790, guid: d8d1190723c31d544b4d73558c73cac6, type: 3}

@@ -1547,8 +1547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc245e0d7896bc34cb3b4d0d7cbd329b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Library
-  playerPosition: {x: -218, y: 268}
+  sceneToLoad: scene11
+  playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
   fadeInPanel: {fileID: 8044942079704946909, guid: 55c19dcc2cb2b964cbe1c8ce4b90157b, type: 3}
   fadeOutPanel: {fileID: 6486552984314968790, guid: d8d1190723c31d544b4d73558c73cac6, type: 3}

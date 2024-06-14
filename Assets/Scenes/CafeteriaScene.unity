@@ -1034,6 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questMark: {fileID: 217328097}
+  currentScene: 
 --- !u!61 &129756445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5846,6 +5847,14 @@ PrefabInstance:
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: 9476314ed5154aa468a55055f0885916, type: 2}
+    - target: {fileID: 372143753509691007, guid: 6a99ad3c7648f0447a892e072032a50e, type: 3}
+      propertyPath: playerPosition.x
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 372143753509691007, guid: 6a99ad3c7648f0447a892e072032a50e, type: 3}
+      propertyPath: playerPosition.y
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 4106497717057688626, guid: 6a99ad3c7648f0447a892e072032a50e, type: 3}
       propertyPath: m_Name
       value: Scene Transition (1)

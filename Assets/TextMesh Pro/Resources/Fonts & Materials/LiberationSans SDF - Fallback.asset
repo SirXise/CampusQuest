@@ -688,6 +688,10 @@ MonoBehaviour:
     m_Unicode: 117
     m_GlyphIndex: 88
     m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 46
+    m_GlyphIndex: 17
+    m_Scale: 1
   m_AtlasTextures:
   - {fileID: 28268798066460806}
   m_AtlasTextureIndex: 0

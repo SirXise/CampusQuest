@@ -941,6 +941,18 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1209689626683937428, guid: b4e2047d67b6c694786d85ae33cb4add, type: 3}
+      propertyPath: sceneToLoad
+      value: scene9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209689626683937428, guid: b4e2047d67b6c694786d85ae33cb4add, type: 3}
+      propertyPath: playerPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209689626683937428, guid: b4e2047d67b6c694786d85ae33cb4add, type: 3}
+      propertyPath: playerPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1701437434468706407, guid: b4e2047d67b6c694786d85ae33cb4add, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 100
