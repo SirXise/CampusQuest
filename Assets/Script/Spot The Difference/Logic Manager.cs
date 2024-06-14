@@ -53,6 +53,7 @@ public class LogicManager : MonoBehaviour
         {
             collider.enabled = false;
         }
+        WinLoseText.color = Color.red;
         WinLoseText.text = "Game Over!";
         ExitButtonLose.gameObject.SetActive(true);
         RestartButton.gameObject.SetActive(true);
