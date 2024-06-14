@@ -2205,7 +2205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d081b5a25a97a1a4aac2c0b1ea2dc53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 5
+  timeLeft: 30
   logic: {fileID: 475899255}
   timerText: {fileID: 2470521182759760275}
 --- !u!222 &5911086056997512560
