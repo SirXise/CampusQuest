@@ -13,7 +13,7 @@ public class MainToken : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (matched == false)
+        if (matched == false && Timer.isRunning)
         {
             if (spriteRenderer.sprite == back)
             {
