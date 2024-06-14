@@ -12,8 +12,9 @@ public class Timer : MonoBehaviour
     public Button ExitButtonLose;
     public Button ExitButtonWin;
     public Button restart;
+    public Image background;
     private float currentTime;
-    private bool isRunning = false;
+    public static bool isRunning = false;
     
     void Start()
     {
@@ -24,6 +25,7 @@ public class Timer : MonoBehaviour
         ExitButtonLose.gameObject.SetActive(false);
         ExitButtonWin.gameObject.SetActive(false);
         restart.gameObject.SetActive(false);
+        background.gameObject.SetActive(false);
     }
 
     void Update()
@@ -53,7 +55,7 @@ public class Timer : MonoBehaviour
 
     private void UpdateTimerText()
     {
-        timerText.text = "Time: " + currentTime.ToString("F2");
+        timerText.text = "Time : " + currentTime.ToString("F2");
     }
 
     private void GameOver()
@@ -62,6 +64,7 @@ public class Timer : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         ExitButtonLose.gameObject.SetActive(true);
         restart.gameObject.SetActive(true);
+        background.gameObject.SetActive(true);
         Debug.Log("Game Over!");
         // Optionally, you can add more logic to handle the game over state, such as disabling game inputs
     }

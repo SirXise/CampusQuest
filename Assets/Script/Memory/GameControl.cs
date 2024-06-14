@@ -15,6 +15,7 @@ public class GameControl : MonoBehaviour
     private int matchesFound = 0;
     public TextMeshProUGUI winText;
     public Button ExitButtonWin;
+    public Image background;
 
     void Start()
     {
@@ -117,6 +118,7 @@ public class GameControl : MonoBehaviour
             // Show win message or perform any win actions
             winText.gameObject.SetActive(true);
             ExitButtonWin.gameObject.SetActive(true);
+            background.gameObject.SetActive(true);
         }
     }
 
