@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":383,"yPos":170},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure...","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":376.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey,
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":413,"yPos":168},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure...","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":414.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey,
     you look so stressed with your studies. Want to know a tip that might help?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roommate","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -3029,7 +3029,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2091303238, guid: 31a96dbdcb5fbaf498ff472610b6cf27, type: 3}
+  m_Sprite: {fileID: -933299695, guid: 2e267aaabc78b2842abd5005fcb487dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3092,7 +3092,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.875, y: 1.25}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.875, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3137,7 +3137,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.875, y: 1.25}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.875, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3174,6 +3174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questMark: {fileID: 1626441084}
   currentScene: room
+  set: 0
 --- !u!114 &573615193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3723,7 +3724,31 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 573615193}
+        m_TargetAssemblyTypeName: MoveByButton, Assembly-CSharp
+        m_MethodName: MoveToGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 573615192}
+        m_TargetAssemblyTypeName: QuestMark, Assembly-CSharp
+        m_MethodName: Change
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &795421614
 Transform:
   m_ObjectHideFlags: 0
@@ -5068,7 +5093,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: -933299695, guid: 2e267aaabc78b2842abd5005fcb487dc, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1359118337
 Transform:
@@ -6459,7 +6484,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 573615192}
         m_TargetAssemblyTypeName: QuestMark, Assembly-CSharp
-        m_MethodName: Disable
+        m_MethodName: Change
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6471,7 +6496,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: -933299695, guid: 2e267aaabc78b2842abd5005fcb487dc, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1573764512
 Transform:
@@ -6507,6 +6532,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MoveByButton, Assembly-CSharp
         m_MethodName: MoveToGame
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 573615192}
+        m_TargetAssemblyTypeName: QuestMark, Assembly-CSharp
+        m_MethodName: Change
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7226,7 +7263,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5307580225341608040, guid: ee488384845caf54aaa664c128b1e61c, type: 3}
       propertyPath: speed
-      value: 700
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5307580225341608040, guid: ee488384845caf54aaa664c128b1e61c, type: 3}
       propertyPath: startingPosition

@@ -10,6 +10,8 @@ public class QuestMark : MonoBehaviour
 
     public string currentScene;
 
+    public int set;
+
     int storeData1 = 0;
     int storeData2 = 0;
     int storeData3 = 0;
@@ -28,30 +30,49 @@ public class QuestMark : MonoBehaviour
         {
             storeData1 = PlayerPrefs.GetInt(dataStoreName1, 0);
             questMark.SetActive(storeData1 == 0);
-            PlayerPrefs.SetInt(dataStoreName1, 1);
         }
         else if (currentScene == "cafe")
         {
             storeData2 = PlayerPrefs.GetInt(dataStoreName2, 0);
             questMark.SetActive(storeData2 == 0);
-            PlayerPrefs.SetInt(dataStoreName2, 1);
         }
         else if (currentScene == "library")
         {
             storeData3 = PlayerPrefs.GetInt(dataStoreName3, 0);
             questMark.SetActive(storeData3 == 0);
-            PlayerPrefs.SetInt(dataStoreName3, 1);
         }
         else if (currentScene == "maze1")
         {
             storeData4 = PlayerPrefs.GetInt(dataStoreName4, 0);
             questMark.SetActive(storeData4 == 0);
-            PlayerPrefs.SetInt(dataStoreName4, 1);
         }
         else if (currentScene == "maze2")
         {
             storeData5 = PlayerPrefs.GetInt(dataStoreName5, 0);
             questMark.SetActive(storeData5 == 0);
+        }
+    }
+
+    public void Change()
+    {
+        if (set == 0)
+        {
+            PlayerPrefs.SetInt(dataStoreName1, 1);
+        }
+        else if (set == 1)
+        {
+            PlayerPrefs.SetInt(dataStoreName2, 1);
+        }
+        else if (set == 2)
+        {
+            PlayerPrefs.SetInt(dataStoreName3, 1);
+        }
+        else if (set == 3)
+        {
+            PlayerPrefs.SetInt(dataStoreName4, 1);
+        }
+        else if (set == 4)
+        {
             PlayerPrefs.SetInt(dataStoreName5, 1);
         }
     }
