@@ -3159,7 +3159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 795421613}
-  playerInRange: 1
+  playerInRange: 0
 --- !u!114 &573615192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,6 +3173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questMark: {fileID: 1626441084}
+  currentScene: room
 --- !u!114 &573615193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3722,19 +3723,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 573615192}
-        m_TargetAssemblyTypeName: QuestMark, Assembly-CSharp
-        m_MethodName: Disable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &795421614
 Transform:
   m_ObjectHideFlags: 0
@@ -7237,7 +7226,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5307580225341608040, guid: ee488384845caf54aaa664c128b1e61c, type: 3}
       propertyPath: speed
-      value: 200
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 5307580225341608040, guid: ee488384845caf54aaa664c128b1e61c, type: 3}
       propertyPath: startingPosition

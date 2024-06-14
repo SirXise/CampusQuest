@@ -22,7 +22,6 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            Debug.Log("Player in Range");
         }
     }
 
@@ -31,7 +30,6 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            Debug.Log("Player in Range");
             ConversationManager.Instance.EndConversation();
         }
     }
