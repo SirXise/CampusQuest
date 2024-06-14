@@ -15,7 +15,7 @@ public class CloseTutorial : MonoBehaviour
     private void Awake()
     {
         storeData = PlayerPrefs.GetInt(dataStoreName,0);
-        Tutorial.SetActive(storeData == 1);
+        Tutorial.SetActive(storeData == 0);
         PlayerPrefs.SetInt(dataStoreName,1);
     }
 
